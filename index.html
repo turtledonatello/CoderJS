@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music ON</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__logo"><img src="img/logo/logo.svg" alt="Logo Music On"><h1>Music <span>ON</span></h1></div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Categorias</li>
+          <li>Nosotros</li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+     
+      <!--Filter Products-->
+      <section>
+        <span id="error"></span>
+        <form action="/" method="GET" id="form" class="form">
+          <div>
+            <label for="filter">Filtrar por precio:</label>
+            <select name="filter" id="filter">
+              <option value="default" selected hidden>Seleccionar filtro</option>
+              <option value="low">Menor precios</option>
+              <option value="hight">Mayor precio</option>
+            </select>
+           
+          <input id="filterSubmit" type="submit" value="Filtrar" />
+        </form>
+      </section>
+      <!--Cards-->
+      <section>
+        <article>
+          <div class="card__container" id="products"></div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Categorias</li>
+          <li>Nosotros</li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
