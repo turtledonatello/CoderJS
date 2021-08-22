@@ -9,31 +9,51 @@
   </head>
   <body>
     <header>
-      <div class="header__logo"><img src="img/logo/logo.svg" alt="Logo Music On"><h1>Music <span>ON</span></h1></div>
+      <div class="header__logo">
+        <img src="img/logo/logo.svg" alt="Logo Music On">
+        <h1>Music <span>ON</span></h1>
+      </div>
       <nav>
         <ul>
           <li>Home</li>
           <li>Categorias</li>
           <li>Nosotros</li>
           <li>Contacto</li>
+          <li class="cartCount">
+            <p id="containerCart" class="containerCart"></p>
+            <i class="fas fa-shopping-cart nav__cart--ico" id="cart"></i>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-     
+      <!--Widget-->
+      <div class="widget__cart" id="widget">
+        <i class="fas fa-times widget__close" id="close"></i>
+        <h4>Productos en el carrito</h4>
+            <div id="widgetCart">
+    
+            </div>
+  
+      </div>
+      </div>
+      <!--Hero(SLIDER)-->
+      <section class="hero">
+        <h2>
+          Music ON Todo lo que buscas en 1 solo lugar
+        </h2>
+        <img src="img/products/sony.png" alt="Auricular Sony">
+      </section>
       <!--Filter Products-->
-      <section>
-        <span id="error"></span>
-        <form action="/" method="GET" id="form" class="form">
+      <section class="filter">
+        <form action="/" method="GET" id="form" class="filter__form">
           <div>
             <label for="filter">Filtrar por precio:</label>
             <select name="filter" id="filter">
-              <option value="default" selected hidden>Seleccionar filtro</option>
+              <option  hidden>Seleccionar filtro</option>
               <option value="low">Menor precios</option>
               <option value="hight">Mayor precio</option>
             </select>
-           
-          <input id="filterSubmit" type="submit" value="Filtrar" />
         </form>
       </section>
       <!--Cards-->
@@ -53,6 +73,9 @@
         </ul>
       </nav>
     </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/script.js"></script>
+    <script src="js/widgetCart.js"></script>
+    <script src="js/addProductCart.js"></script>
   </body>
 </html>
