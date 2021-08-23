@@ -1,0 +1,22 @@
+.cartCount {
+  position: relative;
+
+  .containerCart {
+    border-radius: 50px;
+    background: $primaryColor;
+    font-size: 12px;
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav__cart--ico {
+  font-size: 25px;
+  cursor: pointer;
+}

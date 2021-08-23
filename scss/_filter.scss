@@ -1,0 +1,32 @@
+.filter {
+  background: #222;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  form {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $white;
+      input,
+      select {
+        padding: 10px 15px;
+        background: none;
+        border: 15px;
+        cursor: pointer;
+        color: $white;
+      }
+      input[type='submit'] {
+        background: $primaryColor;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: ease 0.6s;
+        &:hover {
+          background: $white;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}

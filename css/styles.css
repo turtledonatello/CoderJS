@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.widget__cart {
+  background: #f3f3f3;
+  -webkit-box-shadow: 0px 0px 10px #222;
+          box-shadow: 0px 0px 10px #222;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translateX(700px);
+          transform: translateX(700px);
+  right: 0;
+  height: 100%;
+  width: 400px;
+  padding: 45px 20px;
+  z-index: 2;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  overflow: scroll;
+}
+
+.widget__cart h4 {
+  border-bottom: 1px solid #9044d8;
+  font-size: 18px;
+}
+
+.widget__product {
+  border-bottom: 1px solid #9044d8;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.widget__close {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.widget__open {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.cartCount {
+  position: relative;
+}
+
+.cartCount .containerCart {
+  border-radius: 50px;
+  background: #9044d8;
+  font-size: 12px;
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__cart--ico {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+header {
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 20px 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+header .header__logo img {
+  width: 50px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.hero {
+  background: url("../img/hero/bg.svg") 0px -50px no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero img {
+  width: 450px;
+}
+
+.filter {
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px;
+}
+
+.filter form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.filter form div input,
+.filter form div select {
+  padding: 10px 15px;
+  background: none;
+  border: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.filter form div input[type='submit'] {
+  background: #9044d8;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+}
+
+.filter form div input[type='submit']:hover {
+  background: #fff;
+  color: #9044d8;
+}
+
+.card {
+  background-color: #b26fff;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(0px 0px 2px #9044d8);
+          filter: drop-shadow(0px 0px 2px #9044d8);
+  margin: 20px;
+  max-width: 350px;
+}
+
+.card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.card__top {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card__top img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card__info {
+  text-align: center;
+  padding: 10px;
+}
+
+.card__info button {
+  padding: 10px 45px;
+  background: #222;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card__info button:hover {
+  background: #fff;
+  color: #9044d8;
+}
+
+.card__info h3 {
+  font-size: 15px;
+}
+
+.card__info h4 {
+  font-size: 19px;
+  color: #fff;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form input {
+  display: block;
+  margin: 10px auto;
+}
+
+footer {
+  background: #222;
+}
+/*# sourceMappingURL=styles.css.map */

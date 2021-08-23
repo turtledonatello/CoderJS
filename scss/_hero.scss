@@ -1,0 +1,15 @@
+.hero {
+  background: url('../img/hero/bg.svg') 0px -50px no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h2 {
+    font-size: 50px;
+    max-width: 600px;
+    color: #fff;
+  }
+  img {
+    width: 450px;
+  }
+}

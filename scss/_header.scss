@@ -1,0 +1,26 @@
+header {
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  .header {
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 50px;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+}
